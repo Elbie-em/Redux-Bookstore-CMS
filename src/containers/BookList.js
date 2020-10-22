@@ -5,7 +5,14 @@ const BookList = ({booksData}) => {
   return (
     <div>
       <h1>Book List</h1>
-      
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>ID</th>
+        </tr>
+        {booksData.map((book) => <Book  book={book}/>)}
+      </table>
     </div>
   )
 }
