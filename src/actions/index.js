@@ -1,5 +1,4 @@
-const CREATE_BOOK= 'CREATE_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+import { CREATE_BOOK, REMOVE_BOOK} from './actionTypes';
 
 export const createBook = (data) => {
   return {
