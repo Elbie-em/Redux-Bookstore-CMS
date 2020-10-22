@@ -5,9 +5,15 @@ const BookList = ({booksData}) => {
   return (
     <div>
       <h1>Book List</h1>
-     
+      
     </div>
   )
 }
 
-export default (BookList);
+const mapStateToProps = state => {
+  return {
+    booksData: state.books
+  }
+}
+
+export default connect(mapStateToProps)(BookList);
