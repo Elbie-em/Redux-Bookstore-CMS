@@ -10,15 +10,15 @@ const BooksForm = ({ createBook }) => {
   });
 
   const handleChange = ({target}) => {
-    setNewBook(state => ({
+    setBook(state => ({
       ...state,
       [target.name]: target.value,
     }));
   }
 
   const handleSubmit = event => {
-    createBook(newBook);
-    setNewBook({ title: '', category: 'Action' });
+    createBook(book);
+    setBook({ title: '', category: 'Action' });
     event.preventDefault();
   };
 
