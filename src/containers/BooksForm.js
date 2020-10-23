@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'redux';
 import { createBook } from '../actions'
 
 const BooksForm = ({ createBook }) => {
@@ -46,4 +47,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-export default BooksForm;
+export default connect(mapDispatchToProps)(BooksForm);
