@@ -7,7 +7,7 @@ import { removeBook } from '../actions';
 const BookList = ({ booksData, deleteBook }) => { 
   
   const handleRemoveBook = (book) => {
-    removeBook(book);
+    deleteBook(book);
   };
 
   return (
