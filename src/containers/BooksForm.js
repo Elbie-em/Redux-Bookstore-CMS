@@ -8,6 +8,14 @@ const BooksForm = () => {
     category: 'Action'
   });
 
+  const handleChange = ({target}) => {
+    setNewBook(state => ({
+      ...state,
+      [target.name]: target.value,
+    }));
+  }
+
+  
 
   return (
     <form>
