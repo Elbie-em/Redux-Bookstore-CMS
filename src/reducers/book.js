@@ -1,24 +1,24 @@
-import { CREATE_BOOK, REMOVE_BOOK} from '../actions/actionTypes';
+import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionTypes';
 
-const book_a = {
+const bookA = {
   id: Math.floor(Math.random() * 100) + 1,
   title: 'Divergent',
   category: 'Action',
 };
 
-const book_b = {
+const bookB = {
   id: Math.floor(Math.random() * 100) + 1,
   title: 'Maze Runner',
   category: 'Action',
 };
 
-const book_c = {
+const bookC = {
   id: Math.floor(Math.random() * 100) + 1,
   title: 'Enders Game',
   category: 'Sci-Fi',
 };
 
-const initialState = [book_a,book_b,book_c];
+const initialState = [bookA, bookB, bookC];
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {

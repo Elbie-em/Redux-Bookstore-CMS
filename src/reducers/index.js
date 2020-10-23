@@ -5,4 +5,4 @@ const rootReducer = combineReducers({
   books: booksReducer,
 });
 
-export default rootReducer
+export default rootReducer;
