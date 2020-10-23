@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BooksForm = () => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
+  const [book, setBook] = useState({
+    title:'',
+    category: 'Action'
+  });
+
+
   return (
     <form>
       <input type="text" placeholder="Book Title Here" />
