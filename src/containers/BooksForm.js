@@ -24,8 +24,8 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <form>
-      <input type="text" placeholder="Book Title Here" />
-      <select>
+      <input type="text" placeholder="Book Title Here" onChange={handleChange} value={book.title}/>
+      <select type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
         {categories.map(category => (
           <option key={categories.indexOf(category)} value={category}>
             {' '}
@@ -34,7 +34,7 @@ const BooksForm = ({ createBook }) => {
           </option>
         ))}
       </select>
-      <button type="submit" value="Submit">
+      <button type="submit" value="Submit" onClick={handleSubmit}>
         Submit
       </button>
     </form>
