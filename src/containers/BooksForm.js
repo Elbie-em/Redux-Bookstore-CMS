@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { createBook } from '../actions'
 
-const BooksForm = () => {
+const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   const [book, setBook] = useState({
@@ -14,8 +15,6 @@ const BooksForm = () => {
       [target.name]: target.value,
     }));
   }
-
-  
 
   return (
     <form>
@@ -35,5 +34,10 @@ const BooksForm = () => {
     </form>
   );
 };
+
+const mapDispatchToProps = dispatch => ({
+  createBook: book => { dispatch(createBook(book)); },
+});
+
 
 export default BooksForm;
