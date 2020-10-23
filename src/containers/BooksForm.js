@@ -16,6 +16,12 @@ const BooksForm = ({ createBook }) => {
     }));
   }
 
+  const handleSubmit = event => {
+    createBook(newBook);
+    setNewBook({ title: '', category: 'Action' });
+    event.preventDefault();
+  };
+
   return (
     <form>
       <input type="text" placeholder="Book Title Here" />
