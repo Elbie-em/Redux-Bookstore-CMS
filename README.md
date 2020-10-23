@@ -1,4 +1,4 @@
-# React Calculator
+# Book Store CMS
 Building a React and Redux front-end application for Magic-books Inc. bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This product would assist them with organizing and managing their bookstore.
 
 # Live Demo
