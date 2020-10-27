@@ -14,12 +14,18 @@ const BookList = ({ booksData, deleteBook }) => {
       <div>
         <h1>Book List</h1>
         <table>
+          <thead>
           <tr>
             <th>Title</th>
             <th>Category</th>
             <th>ID</th>
           </tr>
-          {booksData.map(book => <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook}/>)}
+          </thead>
+          <tbody>
+            {booksData.map(book => <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook}/>)}
+          </tbody>
+          <tfoot>
+          </tfoot>
         </table>
       </div>
   );
