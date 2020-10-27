@@ -14,18 +14,19 @@ const BooksForm = ({ createBook }) => {
     setBook(state => ({
       ...state,
       [target.name]: target.value,
+      id: Math.floor(Math.random() * 100) + 1,
     }));
   }
 
   const handleSubmit = event => {
+    event.preventDefault();
     createBook(book);
     setBook({ title: '', category: 'Action' });
-    event.preventDefault();
   };
 
   return (
     <form>
-      <input type="text" placeholder="Book Title Here" onChange={handleChange} value={book.title}/>
+      <input type="text" id='title' name='title' placeholder="Book Title Here" onChange={handleChange} value={book.title}/>
       <select type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
         {categories.map(category => (
           <option key={categories.indexOf(category)} value={category}>
@@ -47,4 +48,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-export default connect(mapDispatchToProps)(BooksForm);
+export default connect(null,mapDispatchToProps)(BooksForm);
