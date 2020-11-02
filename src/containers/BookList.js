@@ -66,6 +66,7 @@ const mapDispatchToProps = dispatch => ({
 BookList.propTypes = {
   booksData: PropTypes.arrayOf(PropTypes.object).isRequired,
   deleteBook: PropTypes.func.isRequired,
+  changeBookFilter: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);

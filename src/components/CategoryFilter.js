@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CategoryFilter = ({filterBooks}) => {
 
@@ -10,5 +11,10 @@ const CategoryFilter = ({filterBooks}) => {
     </select>
   );
 }
+
+CategoryFilter.propTypes = {
+  filterBooks: PropTypes.func.isRequired,
+};
+
 
 export default CategoryFilter;
