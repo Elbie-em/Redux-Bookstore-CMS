@@ -44,9 +44,19 @@ const BookList = ({ booksData, deleteBook, changeBookFilter}) => {
   );
 };
 
-const mapStateToProps = state => ({
-  booksData: state.books,
-});
+const mapStateToProps = (state) => {
+  switch (state.filter) {
+    case "All":
+      return {
+        booksData: state.books
+      };
+    default:
+      return {
+        booksData: state.books.filter((book) => 
+    book.category === (state.filter || book.category))
+      } 
+  }
+};
 
 const mapDispatchToProps = dispatch => ({
   deleteBook: book => { dispatch(removeBook(book)); },
@@ -59,3 +69,5 @@ BookList.propTypes = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
+
+
