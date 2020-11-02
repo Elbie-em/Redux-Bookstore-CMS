@@ -34,4 +34,6 @@ const bookF = {
   category: 'Biography',
 };
 
-export const initialState = [bookA, bookB, bookC,bookD,bookE,bookF];
+const initialState = [bookA, bookB, bookC, bookD, bookE, bookF];
+
+export default initialState;

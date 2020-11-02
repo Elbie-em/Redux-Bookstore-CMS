@@ -1,5 +1,5 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/actionTypes';
-import { initialState } from './stateData/bookIntialStateData';
+import initialState from './stateData/bookIntialStateData';
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
