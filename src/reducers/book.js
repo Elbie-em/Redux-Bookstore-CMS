@@ -18,7 +18,25 @@ const bookC = {
   category: 'Sci-Fi',
 };
 
-const initialState = [bookA, bookB, bookC];
+const bookD = {
+  id: Math.floor(Math.random() * 100) + 1,
+  title: 'Harry Potter',
+  category: 'Sci-Fi',
+};
+
+const bookE = {
+  id: Math.floor(Math.random() * 100) + 1,
+  title: 'Bicos House',
+  category: 'Horror',
+};
+
+const bookF = {
+  id: Math.floor(Math.random() * 100) + 1,
+  title: 'Timeless',
+  category: 'Biography',
+};
+
+const initialState = [bookA, bookB, bookC,bookD,bookE,bookF];
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
