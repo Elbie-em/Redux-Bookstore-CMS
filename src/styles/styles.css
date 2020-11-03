@@ -1,3 +1,24 @@
-.App {
-  text-align: left;
+body {
+  background: #f5f6fa !important;
+  min-height: 100vh;
+  margin: 0; 
+}
+
+.nav-sec {
+  width: 1400px;
+  height: 95px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bookstore-CMS {
+  height: 37px;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.main-panel-sec {
+  
 }
