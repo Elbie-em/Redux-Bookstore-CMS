@@ -17,24 +17,24 @@ const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
 
   return (
     <div>
-      <nav className='nav-sec d-flex align-items-center justify-content-between'>
-        <div className='d-flex align-items-center'>
-          <h1 className='bookstore-CMS ml-5 mr-3'>Book Store CMS</h1>
-          <h6 className='mr-5 mt-2'>BOOKS</h6>
-          <h6 className='mt-2 text-muted'>CATEGORIES</h6>
+      <nav className="nav-sec d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center">
+          <h1 className="bookstore-CMS ml-5 mr-3">Book Store CMS</h1>
+          <h6 className="mr-5 mt-2">BOOKS</h6>
+          <h6 className="mt-2 text-muted">CATEGORIES</h6>
           <div className="ml-3">
-           <CategoryFilter filterBooks={handleFilterChange} />
+            <CategoryFilter filterBooks={handleFilterChange} />
           </div>
         </div>
       </nav>
       <div className="main-panel-sec">
-          {booksData.map(book => (
-            <Book
-              key={book.id}
-              book={book}
-              handleRemoveBook={handleRemoveBook}
-            />
-          ))}
+        {booksData.map(book => (
+          <Book
+            key={book.id}
+            book={book}
+            handleRemoveBook={handleRemoveBook}
+          />
+        ))}
       </div>
     </div>
   );

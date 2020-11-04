@@ -8,24 +8,29 @@ const Book = ({ book, handleRemoveBook }) => {
   return (
     <div className="p-3">
       <div className="data-card mx-auto d-flex flex-column p-3 bg-white">
-        <h6 className='text-muted'>{book.category}</h6>
+        <h6 className="text-muted">{book.category}</h6>
         <div className="d-flex flex-row w-100">
           <h2 className="title-font mr-5 mt-1">{book.title}</h2>
-          <div className='w-75 mt-3 progress'>
-  <div className="progress-bar" role="progressbar" style={{flex:percentage}}>{value}%</div>
+          <div className="w-75 mt-3 progress">
+            <div className="progress-bar" role="progressbar" style={{ flex: percentage }}>
+              {value}
+              %
+            </div>
           </div>
         </div>
-        <h5 className='font-weight-lighter text-primary'>Book Id: {book.id}</h5>
-          <p>
-            <span className="font-weight-lighter text-primary btn btn-link">Comments</span>
-            <span className="text-muted font-weight-lighter h4">|</span>
-            <span className="font-weight-lighter text-primary  btn btn-link">Edit</span>
-            <button className="btn btn-primary float-right" type="submit" onClick={() => handleRemoveBook(book.id)}> Remove Book </button>
-          </p>
+        <h5 className="font-weight-lighter text-primary">
+          Book Id:
+          {book.id}
+        </h5>
+        <p>
+          <span className="font-weight-lighter text-primary btn btn-link">Comments</span>
+          <span className="text-muted font-weight-lighter h4">|</span>
+          <span className="font-weight-lighter text-primary  btn btn-link">Edit</span>
+          <button className="btn btn-primary float-right" type="submit" onClick={() => handleRemoveBook(book.id)}> Remove Book </button>
+        </p>
       </div>
     </div>
   );
-
 };
 
 Book.propTypes = {
