@@ -28,15 +28,6 @@ const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
         </div>
       </nav>
       <div className="main-panel-sec">
-        <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>ID</th>
-          </tr>
-        </thead>
-        <tbody>
           {booksData.map(book => (
             <Book
               key={book.id}
@@ -44,9 +35,6 @@ const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
               handleRemoveBook={handleRemoveBook}
             />
           ))}
-        </tbody>
-        <tfoot />
-      </table>
       </div>
     </div>
   );
