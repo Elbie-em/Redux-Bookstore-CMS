@@ -5,7 +5,7 @@ Building a React and Redux front-end application for Magic-books Inc. bootstrapp
 
 > Click [here](https://mbbookstore.herokuapp.com/) for live demo
 
-![screenshot](public/coming-soon.jpg)
+![screenshot](public/screensot.png)
 
 ## Built With
 - React-redux
