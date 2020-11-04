@@ -26,9 +26,15 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form>
-      <input type="text" id="title" name="title" placeholder="Book Title Here" onChange={handleChange} value={book.title} />
-      <select type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
+    <div class="p-5 w-100">
+      <form className="form-inline border p-2 d-flex align-items-center">
+        <div className="form-group mb-2">
+         <label for="title" className="h4 ml-5 mr-2">Book Title</label>
+         <input className="form-control" type="text" id="title" name="title" placeholder="Book Title Here" onChange={handleChange} value={book.title} />
+        </div>
+        <div className= "form-group mb-2">
+        <label for="category" className="h4 ml-5 mr-2">Choose Category</label>
+        <select className="form-control" type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
         {categories.map(category => (
           <option key={categories.indexOf(category)} value={category}>
             {' '}
@@ -37,10 +43,12 @@ const BooksForm = ({ createBook }) => {
           </option>
         ))}
       </select>
-      <button type="submit" value="Submit" onClick={handleSubmit}>
+        </div>
+      <button className="btn btn-primary mb-2  ml-5 mr-2 w-25" type="submit" value="Submit" onClick={handleSubmit}>
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
