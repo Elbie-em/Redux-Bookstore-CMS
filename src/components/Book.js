@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => {
   const percentage = Math.floor(Math.random() * (100 - 1)) / 100;
-  const value = percentage * 100;
+  const value = Math.round(percentage * 100);
 
   return (
     <div className="p-3">
