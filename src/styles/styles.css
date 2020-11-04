@@ -19,6 +19,12 @@ body {
   color: #0290ff;
 }
 
-.main-panel-sec {
-  
+.data-card {
+  width: 90%;
+  height: 170px;
+  border: 1px solid #e2e2e2
+}
+
+.title-font {
+  font-family: 'Roboto Slab', serif;
 }
