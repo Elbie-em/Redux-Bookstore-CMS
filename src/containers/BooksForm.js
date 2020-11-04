@@ -45,7 +45,7 @@ const BooksForm = ({ createBook }) => {
       </select>
         </div>
       <button className="btn btn-primary mb-2  ml-5 mr-2 w-25" type="submit" value="Submit" onClick={handleSubmit}>
-        Submit
+        ADD BOOK
       </button>
     </form>
     </div>
