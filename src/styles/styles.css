@@ -8,7 +8,14 @@ body {
   width: 100%;
   height: 95px;
   background-color: #fff;
+}
+
+.main-font {
   font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+  font-weight: 100;
 }
 
 .bookstore-CMS {
@@ -25,6 +32,15 @@ body {
   border: 1px solid #e2e2e2;
 }
 
-.title-font {
+.data-card-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-el-font {
   font-family: 'Roboto Slab', serif;
+}
+
+.title-font {
+  font-weight: 500;
 }
