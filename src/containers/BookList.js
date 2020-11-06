@@ -26,7 +26,7 @@ const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
             <CategoryFilter filterBooks={handleFilterChange} />
           </div>
         </div>
-        <i className="far fa-user-circle fa-2x text-primary float-right mb-2 mr-3"></i>
+        <i className="far fa-user-circle fa-2x text-primary float-right mb-2 mr-3" />
       </nav>
       <div className="main-panel-sec">
         {booksData.map(book => (

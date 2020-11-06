@@ -27,7 +27,7 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <div className="form-area mx-auto mb-5">
-      <h3 class="main-font text-muted font-weight-bold">ADD NEW BOOK</h3>
+      <h3 className="main-font text-muted font-weight-bold">ADD NEW BOOK</h3>
       <form className="mt-2">
         <input className="form-el book-title main-font" type="text" id="title" name="title" placeholder="Book title" onChange={handleChange} value={book.title} />
         <select className="form-el book-category main-font" type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
