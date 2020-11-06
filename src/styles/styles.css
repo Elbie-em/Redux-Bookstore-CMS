@@ -44,3 +44,33 @@ body {
 .title-font {
   font-weight: 500;
 }
+
+.form-area {
+  width: 88%;
+  padding-top:40px;
+  border-top: 3px solid #e2e2e2;
+}
+
+.form-el {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  height: 45px;
+}
+
+.book-title {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.book-category {
+  width: 245px;
+  margin-right: 30px;
+}
+
+.form-btn {
+  width: 20%;
+  height: 45px;
+  border-radius: 3px;
+  background-color:  #0290ff;
+}
