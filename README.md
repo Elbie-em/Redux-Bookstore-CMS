@@ -5,7 +5,7 @@ Building a React and Redux front-end application for Magic-books Inc. bootstrapp
 
 > Click [here](https://mbbookstore.herokuapp.com/) for live demo
 
-![screenshot](public/coming-soon.jpg)
+![screenshot](public/screenshot.png)
 
 ## Built With
 - React-redux
@@ -104,6 +104,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](microverse.org)
+- [CSS Script](https://www.cssscript.com/pure-css-circular-percentage-bar/)
 
 ## Learn More
 

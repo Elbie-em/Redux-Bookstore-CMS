@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/styles.css';
 
 const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
   const handleRemoveBook = book => {
@@ -16,29 +17,26 @@ const BookList = ({ booksData, deleteBook, changeBookFilter }) => {
 
   return (
     <div>
-      <h1>Book List</h1>
-      <div>
-        <CategoryFilter filterBooks={handleFilterChange} />
+      <nav className="main-font nav-sec d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center">
+          <h1 className="bookstore-CMS ml-5 mr-3">Book Store CMS</h1>
+          <h6 className="nav-link mr-5 mt-2">BOOKS</h6>
+          <h6 className="nav-link mt-2 text-muted">CATEGORIES</h6>
+          <div className="ml-3">
+            <CategoryFilter filterBooks={handleFilterChange} />
+          </div>
+        </div>
+        <i className="far fa-user-circle fa-2x text-primary float-right mb-2 mr-3" />
+      </nav>
+      <div className="main-panel-sec">
+        {booksData.map(book => (
+          <Book
+            key={book.id}
+            book={book}
+            handleRemoveBook={handleRemoveBook}
+          />
+        ))}
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>ID</th>
-          </tr>
-        </thead>
-        <tbody>
-          {booksData.map(book => (
-            <Book
-              key={book.id}
-              book={book}
-              handleRemoveBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-        <tfoot />
-      </table>
     </div>
   );
 };

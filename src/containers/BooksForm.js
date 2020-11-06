@@ -26,21 +26,22 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form>
-      <input type="text" id="title" name="title" placeholder="Book Title Here" onChange={handleChange} value={book.title} />
-      <select type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
-        {categories.map(category => (
-          <option key={categories.indexOf(category)} value={category}>
-            {' '}
-            {category}
-            {' '}
-          </option>
-        ))}
-      </select>
-      <button type="submit" value="Submit" onClick={handleSubmit}>
-        Submit
-      </button>
-    </form>
+    <div className="form-area mx-auto mb-5">
+      <h3 className="main-font text-muted font-weight-bold">ADD NEW BOOK</h3>
+      <form className="mt-2">
+        <input className="form-el book-title main-font" type="text" id="title" name="title" placeholder="Book title" onChange={handleChange} value={book.title} />
+        <select className="form-el book-category main-font" type="text" id="category" name="category" onChange={handleChange} value={book.category} required>
+          {categories.map(category => (
+            <option key={categories.indexOf(category)} value={category}>
+              {' '}
+              {category}
+              {' '}
+            </option>
+          ))}
+        </select>
+        <button className="form-btn card-el-font font-weight-bold text-white" type="submit" value="Submit" onClick={handleSubmit}>ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 
