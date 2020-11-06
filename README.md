@@ -104,6 +104,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](microverse.org)
+- [CSS Script](https://www.cssscript.com/pure-css-circular-percentage-bar/)
 
 ## Learn More
 
